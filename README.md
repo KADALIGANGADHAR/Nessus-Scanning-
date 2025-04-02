@@ -8,31 +8,20 @@
 ## Step 1: Download & Install Nessus
 **Purpose: Set up Nessus on your system.**
 **Steps:Go to the official Tenable Nessus download page: https://www.tenable.com/products/nessus.**
+ **Enter credientials or register** 
 ![image](https://github.com/user-attachments/assets/3e3be7a9-e434-474c-b4c1-c09cf17d2b82)
 **Select the version compatible with your OS (e.g., Kali Linux → Nessus-10.x-debian-amd64.deb).**
 ![image](https://github.com/user-attachments/assets/47d94dde-4fde-481d-a5b1-048a50072eca)
 **Open a terminal in Kali Linux and navigate to the download directory**
-**Run the following command to install Nessus:```sudo dpkg -i Nessus-10.x-debian-amd64.deb```**
+**Run the following command to install Nessus:```sudo dpkg -i ```**
 
 ## Start Nessus service: ```sudo systemctl start nessusd```
 
 Enable Nessus to start on boot:
-
 sudo systemctl enable nessusd
-
 Open a web browser and navigate to https://localhost:8834 to complete the setup.
-
 Create a Nessus account and activate it using the activation code from the Tenable website.
-
 Wait for the plugin update to complete (~10-20 minutes).
-
-
- 
- 
-![image](https://github.com/user-attachments/assets/47d94dde-4fde-481d-a5b1-048a50072eca)
-![image](https://github.com/user-attachments/assets/37f5231b-d00a-4748-906c-dbea75b4bc33)
-![image](https://github.com/user-attachments/assets/4018f369-5635-43d8-857d-59ab2797b612)
-![image](https://github.com/user-attachments/assets/5b2a4a8b-dff8-4f9f-baba-9ce3c11d3cf9)
 
 
  **Virtual Lab Setup with vulnerable machines:**
